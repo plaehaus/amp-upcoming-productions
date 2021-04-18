@@ -5,11 +5,22 @@
 </script>
 
 <style>
+  .production-card {
+    @apply shadow;
+    @apply mb-4;
+    @apply bg-white;
+    @apply rounded;
+    /* @apply border-0;
+    @apply border-b;
+    @apply border-solid;
+    @apply border-gray-200; */
+    overflow: hidden;
+  }
 </style>
 
-<article class="border-0 border-b border-solid border-gray-200">
+<article class="production-card">
   <a
-    class="block p-4 lg:px-0 no-underline text-black"
+    class="block no-underline text-black"
     target="_top"
     href={production.link}
   >
@@ -22,7 +33,7 @@
           alt={production.title}
         />
       </div>
-      <div class="w-full md:(w-7/12 pl-4)">
+      <div class="w-full md:(w-7/12 pl-4) p-4">
         <h2 class="my-0 font-semibold text-black text-sm leading-none md:(text-base leading-none)">
           {production.title}
         </h2>
