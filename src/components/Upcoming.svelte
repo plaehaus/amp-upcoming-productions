@@ -1,10 +1,8 @@
 <script>
   import { getProductions } from "../api/productions";
   import Loader from "./Loader.svelte";
-  // import Loader from "./LinearProgress.svelte";
   import { onMount } from "svelte";
   import ProductionCard from "./ProductionCard.svelte";
-  // import ProductionCard_Skeleton from "./ProductionCard_Skeleton.svelte";
 
   let productions = [];
   let promise = undefined;
