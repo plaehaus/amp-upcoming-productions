@@ -45,7 +45,6 @@ async function getProductions() {
     const url = 'https://amp-backend-plaehaus.netlify.app/.netlify/functions/upcomingProductions';
     const response = await fetch(url);
     const data = await response.json();
-    console.log('data returned:', data);
     let productions = data.data['productions']['edges'].map(item => {
         var prod = item.node;
         var dates = convertDates(prod);
