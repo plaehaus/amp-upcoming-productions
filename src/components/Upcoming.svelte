@@ -21,7 +21,7 @@
 </style>
 
 <div>
-  <main class="max-w-3xl m-auto p-4">
+  <main class="max-w-3xl m-auto">
     <div class="max-w-full m-auto text-center">
       <div>
         {#if promise}

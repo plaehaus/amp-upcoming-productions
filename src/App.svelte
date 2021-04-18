@@ -19,7 +19,7 @@
 } */
 </style>
 
-<main class="w-full font-sans">
+<main class="w-full font-sans bg-white">
   <!-- <button class="btn">btn</button>
   <button class="btn-blue">btn-blue</button> -->
   <!-- <h2>The date according to Node.js is:</h2>
