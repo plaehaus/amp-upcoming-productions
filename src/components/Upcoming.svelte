@@ -1,8 +1,8 @@
 <script>
-  import { getProductions } from "../api/productions";
-  import Loader from "./Loader.svelte";
-  import { onMount } from "svelte";
-  import ProductionCard from "./ProductionCard.svelte";
+  import { getProductions } from '../api/productions';
+  import Loader from './Loader.svelte';
+  import { onMount } from 'svelte';
+  import ProductionCard from './ProductionCard.svelte';
 
   let productions = [];
   let promise = undefined;

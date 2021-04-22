@@ -1,15 +1,21 @@
 <script>
-  import { formatRange } from "../helpers/formatters";
+  import { formatRange } from '../helpers/formatters';
 
   export let production;
 </script>
 
 <style>
+  .amp-production-card {
+    @apply border-0 border-b border-solid border-gray-200 mb-4 pb-4;
+  }
+  .amp-production-card:last-child {
+    @apply border-b-0 mb-0 pb-0;
+  }
 </style>
 
-<article class="border-0 border-b border-solid border-gray-200">
+<article class="amp-production-card">
   <a
-    class="block p-4 lg:px-0 no-underline text-black"
+    class="block p-0 no-underline text-black"
     target="_top"
     href={production.link}
   >
@@ -22,8 +28,8 @@
           alt={production.title}
         />
       </div>
-      <div class="w-full md:(w-7/12 pl-4)">
-        <h2 class="my-0 font-semibold text-black text-sm leading-none md:(text-base leading-none)">
+      <div class="w-full md:(w-7/12) p-4">
+        <h2 class="my-0 font-semibold text-black leading-none md:(text-base leading-none)">
           {production.title}
         </h2>
         {#if production.startDate}
@@ -38,7 +44,7 @@
           <dl class="text-sm mt-1 mb-0 leading-4">
             <dt class="sr-only">Tickets</dt>
             <dd class="ml-0 text-gray-500">
-              {formatRange(production.startPrice, production.endPrice, "$")}
+              {formatRange(production.startPrice, production.endPrice, '$')}
             </dd>
           </dl>
         {/if}

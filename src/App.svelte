@@ -1,7 +1,7 @@
 <script>
   // import { onMount } from "svelte";
 
-  import Upcoming from "./components/Upcoming.svelte";
+  import Upcoming from './components/Upcoming.svelte';
 
   // onMount(async () => {
   //   const res = await fetch("/api/date");

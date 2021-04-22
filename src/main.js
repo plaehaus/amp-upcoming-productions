@@ -5,7 +5,7 @@ var script = document.currentScript;
 script.parentNode.insertBefore(div, script);
 
 const app = new App({
-    target: div
+  target: div
 });
 
 export default app;
