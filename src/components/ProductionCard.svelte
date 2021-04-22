@@ -28,7 +28,7 @@
           alt={production.title}
         />
       </div>
-      <div class="w-full md:(w-7/12) p-4">
+      <div class="w-full md:(w-7/12) px-4">
         <h2 class="my-0 font-semibold text-black leading-none md:(text-base leading-none)">
           {production.title}
         </h2>
