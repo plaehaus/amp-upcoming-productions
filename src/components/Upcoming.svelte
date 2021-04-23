@@ -20,24 +20,19 @@
 <style>
 </style>
 
-<div>
-  <main class="max-w-5xl m-auto p-4">
-    <div class="max-w-full m-auto text-center">
-      <div>
-        {#if promise}
-          {#await promise}
-            <Loader fullScreen={false} />
-            <!-- <ProductionCard_Skeleton />
-            <ProductionCard_Skeleton />
-            <ProductionCard_Skeleton /> -->
-          {:catch error}
-            <p>Something went wrong: {error.message}</p>
-          {/await}
-        {/if}
-      </div>
+<div class="max-w-5xl m-auto">
+  <div class="max-w-full m-auto text-center">
+    <div>
+      {#if promise}
+        {#await promise}
+          <Loader fullScreen={false} />
+        {:catch error}
+          <p>Something went wrong: {error.message}</p>
+        {/await}
+      {/if}
     </div>
-    {#each productions as production, i}
-      <ProductionCard {production} />
-    {/each}
-  </main>
+  </div>
+  {#each productions as production, i}
+    <ProductionCard {production} />
+  {/each}
 </div>
