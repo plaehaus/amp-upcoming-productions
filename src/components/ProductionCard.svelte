@@ -21,7 +21,7 @@
   >
     <div class="flex flex-col md:flex-row">
       <div class="w-full md:(w-7/12)">
-        <h2 class="mt-0 mb-1 font-serif font-semibold text-gray-800 text-xl leading-none md:(text-xl leading-none)">
+        <h2 class="mt-0 mb-1 font-semibold text-gray-800 text-xl leading-none md:(text-xl leading-none)">
           {production.title}
         </h2>
         {#if production.startDate}
