@@ -27,9 +27,9 @@
         <h2 class="mt-0 mb-0 font-semibold text-gray-800 text-xl leading-none md:(text-xl leading-none)">
           {production.title}
         </h2>
-        <div class="flex flex-row">
+        <div class="flex flex-row md:flex-col">
           {#if production.startDate}
-            <dl class="text-sm mt-1 mb-2 leading-4 w-2/3">
+            <dl class="text-sm mt-1 mb-2 leading-4 w-2/3 md:(w-full mb-1)">
               <dt class="sr-only">Dates</dt>
               <dd class="ml-0 text-gray-500">
                 {formatRange(production.startDate, production.endDate)}
@@ -37,7 +37,7 @@
             </dl>
           {/if}
           {#if production.startPrice}
-            <dl class="text-sm mt-1 mb-2 leading-4 w-1/3 text-right">
+            <dl class="text-sm mt-1 mb-2 leading-4 w-1/3 text-right  md:(w-full text-left mt-0)">
               <dt class="sr-only">Tickets</dt>
               <dd class="ml-0 text-gray-500">
                 {formatRange(production.startPrice, production.endPrice, '$')}
